@@ -1,0 +1,42 @@
+img{
+    width: 100%;
+}
+a{
+    color: blue;
+}
+a:hover{
+    color:brown;
+}
+a:link{
+    color:aquamarine;
+}
+.number_ul{
+    list-style: conic-gradient;
+}
+.font_weight{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin:30px 0px;
+}
+
+.houses_box{
+    text-transform: uppercase;
+    border: 5px solid #c4c4c4;
+    padding: 10px 20px;
+    margin: 20px;
+}
+.houses_box h1{
+    text-shadow: 3px 5px 5px #FF0000;
+}
+
+.casas_box{
+    text-transform:capitalize;
+    box-shadow: 2px 9px 15px #000;
+    padding: 10px 20px;
+    margin: 20px;
+}
+.casas_box h1{
+    text-shadow: 5px 4px 2px #00FFF3;
+}
+

@@ -1,0 +1,12 @@
+img{
+    width: 100%;
+}
+a{
+    color: blue;
+}
+.number_ul{
+    list-style: conic-gradient;
+}
+.font_weight{
+    font-weight: bold;
+}
