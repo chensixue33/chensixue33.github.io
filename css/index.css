@@ -1,9 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    margin: 6vh 0vh;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
 p{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 ul li{
     color: blue;
 }
 ul li a{
     color: blue;
+}
+.body_box{
+    width: 90%;
+    border: 2px solid black;
+    padding: 70px;
+    box-sizing: border-box;
+    display: flex;
+}
+.body_box .left_box{
+    width: 50%;
+}
+.body_box .left_box img{
+    width:100%;
+}
+
+.body_box .right_box{
+    padding-left: 142px;
+    width: 37%;
+}
+.body_box .right_box ul{
+    margin-left: 24%;
+   
+}
+.body_box .right_box ul li{
+    margin-top: 4%;
 }
