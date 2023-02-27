@@ -44,3 +44,22 @@ ul li a{
 .body_box .right_box ul li{
     margin-top: 4%;
 }
+
+@media screen and (max-width:700px) {
+    .body_box{
+        display: block;
+        margin:auto;
+    }
+    .left_box{
+        width: 100% !important;
+    }
+
+    .right_box{
+        width: 100% !important;
+        margin-top: 40px !important;;
+        padding-left:0px !important;
+    }
+    .body_box .right_box ul{
+        margin-left: 15% !important;
+    }
+}
