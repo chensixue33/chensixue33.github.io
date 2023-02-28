@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'nav-style';
+    src: url('../font/ggantitahun-bwz8b.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    font-family: 'nav-style';
+    display: flex;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+nav h3{
+    width: 30%;
+    padding: 2px 20px;
+}
+nav ul{
+    display: flex;
+    width: 70%;
+}
+nav ul li{
+    list-style: none;
+    width: 16%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+nav ul li:hover{
+    background-color: aqua;
+    color:white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 56px;
+}
+main img{
+    width: 72%;
+}
