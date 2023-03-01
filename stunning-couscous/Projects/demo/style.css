@@ -48,11 +48,26 @@ nav ul li:hover{
 
 
 main{
-    padding: 10px 50px;
-    position: absolute;
-    bottom: 20px;
+    padding: 10px 0px;
 }
-
+.introduce_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+main .cloumn_1{
+    display: flex;
+}
+main .cloumn_1 .left_box{
+    width: 70%;
+}
+main .cloumn_1 .right_box{
+    margin-left: 20px;
+    width: 30%;
+}
 
 main .content_box{
     padding:20px 0px;
@@ -63,29 +78,52 @@ main .content_box h2{
 }
 main .content_box .flex_img{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin:20px 0px;
 }
 main .content_box .flex_img li{
     list-style: none;
     width: 25%;
+    margin-left: 20px;
     padding: 10px;
     margin-top: 10px;
-    display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 main .content_box .flex_img li img{
-    cursor: pointer;
-    margin-bottom: 5px;
+    
 }
 main .content_box .flex_img li p{
     text-align: center;
 }
 
+
+
+main .content_box .flex_text{
+    display: flex;
+    margin:20px 0px;
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .content_box .flex_text li{
+    width:20%;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width:900px) {
-    main{
-        position: relative;
-        font-size: xx-small;
+    main .content_box .flex_img li{
+        width:40%;
+    }
+    main .content_box .flex_text li{
+        width:30%;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    main .content_box .flex_text li{
+        width:40% ;
     }
 }
 
@@ -107,18 +145,37 @@ main .content_box .flex_img li p{
         text-align: center;
         padding: 2px 0px;
     }
-    
-    main{
-        position: relative;
-        font-size:0.3em;
+
+
+    main .cloumn_1{
+        display: block;
     }
-    main .content_box .flex_img li{
-        padding: 2px;
+    main .cloumn_1 .left_box,main .cloumn_1 .right_box{
+        width: 100%;
+        margin-left:0px;
     }
-    main .content_box .flex_img li img{
-        margin-bottom: 1px;
+    main .cloumn_1 .right_box{
+        margin-top: 20px;
     }
 
+    
+    main .content_box .flex_img {
+        display: block;
+    }
+    main .content_box .flex_img li{
+        width:100% !important;
+        margin-left:0;
+        padding:0;
+    }
+
+    main .content_box .flex_text {
+        display: block;
+    }
+    main .content_box .flex_text li{
+        width:100% !important;
+        margin-left:0;
+        padding:0;
+    }
 }
 
 
