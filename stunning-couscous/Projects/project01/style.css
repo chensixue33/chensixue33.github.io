@@ -6,10 +6,22 @@
     padding: 0;
     margin: 0;
 }
+p{
+    word-break:break-all;
+    text-align: left;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+body{
+    padding:0px 20px;
+}
 nav{
     font-family: 'nav-style';
     display: flex;
-    padding:0px 20px;
     position: fixed;
     width: 100%;
     bottom: 0px;
@@ -32,14 +44,86 @@ nav ul li:hover{
     background-color: aqua;
     color:white;
 }
+
+
 main{
+    padding: 10px 0px;
+}
+.introduce_box{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 56px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
-main img{
-    width: 72%;
+main .cloumn_1{
+    display: flex;
+}
+main .cloumn_1 .left_box{
+    width: 70%;
+}
+main .cloumn_1 .right_box{
+    margin-left: 20px;
+    width: 30%;
+}
+
+main .content_box{
+    padding:20px 0px;
+}
+main .content_box h2{
+    background: antiquewhite;
+    padding: 7px 12px;
+}
+main .content_box .flex_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0px;
+}
+main .content_box .flex_img li{
+    list-style: none;
+    width: 25%;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+main .content_box .flex_img li img{
+    
+}
+main .content_box .flex_img li p{
+    text-align: center;
+}
+
+
+
+main .content_box .flex_text{
+    display: flex;
+    margin:20px 0px;
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .content_box .flex_text li{
+    width:20%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:900px) {
+    main .content_box .flex_img li{
+        width:40%;
+    }
+    main .content_box .flex_text li{
+        width:30%;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    main .content_box .flex_text li{
+        width:40% ;
+    }
 }
 
 
@@ -47,6 +131,9 @@ main img{
     nav{
         display: block;
         padding:0px;
+        width: 91%;
+        position:relative;
+        margin-top: 20px;
     }
     nav ul{
         display: block;
@@ -58,4 +145,36 @@ main img{
         padding: 2px 0px;
     }
 
+
+    main .cloumn_1{
+        display: block;
+    }
+    main .cloumn_1 .left_box,main .cloumn_1 .right_box{
+        width: 100%;
+        margin-left:0px;
+    }
+    main .cloumn_1 .right_box{
+        margin-top: 20px;
+    }
+
+    
+    main .content_box .flex_img {
+        display: block;
+    }
+    main .content_box .flex_img li{
+        width:100% !important;
+        margin-left:0;
+        padding:0;
+    }
+
+    main .content_box .flex_text {
+        display: block;
+    }
+    main .content_box .flex_text li{
+        width:100% !important;
+        margin-left:0;
+        padding:0;
+    }
 }
+
+
