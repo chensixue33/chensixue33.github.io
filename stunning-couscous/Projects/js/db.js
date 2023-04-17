@@ -9,7 +9,7 @@ window.onload=function(){
     move8();
     move9();
     move10();
-    var url="../db/json/movies-coming-soon.json"
+    var url="./db/json/movies-coming-soon.json"
     var request=new XMLHttpRequest();
     request.open("get",url);
     request.send(null);

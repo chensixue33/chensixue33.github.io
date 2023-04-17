@@ -6,7 +6,7 @@
 
 function openDetail(){
     var id=event.explicitOriginalTarget.id;
-    var url="../db/json/movies-coming-soon.json"
+    var url="./db/json/movies-coming-soon.json"
     var request=new XMLHttpRequest();
     request.open("get",url);
     request.send(null);

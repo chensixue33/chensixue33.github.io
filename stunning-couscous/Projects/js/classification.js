@@ -1,7 +1,7 @@
 var dateList=[];
 var genresList=[];
 window.onload=function(){
-    var url="../db/json/movies-coming-soon.json"
+    var url="./db/json/movies-coming-soon.json"
     var request=new XMLHttpRequest();
     request.open("get",url);
     request.send(null);
@@ -83,7 +83,7 @@ window.onload=function(){
 function choose(){
     if(event.target.name=="date"){
         var date=event.target.innerHTML;
-        var url="../db/json/movies-coming-soon.json"
+        var url="./db/json/movies-coming-soon.json"
         var request=new XMLHttpRequest();
         request.open("get",url);
         request.send(null);
@@ -119,7 +119,7 @@ function choose(){
         }
     }else if(event.target.name=="genres"){
         var genre=event.target.innerHTML;
-        var url="../db/json/movies-coming-soon.json"
+        var url="./db/json/movies-coming-soon.json"
         var request=new XMLHttpRequest();
         request.open("get",url);
         request.send(null);
