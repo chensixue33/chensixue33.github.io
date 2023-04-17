@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'nav-style';
+    src: url('../font/ggantitahun-bwz8b.ttf');
+}
+*{
+    padding:0;
+    margin: 0;
+    font-family: "nav-style";
+}
+
+nav{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width:33%;
+    list-style: none;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    color:black;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.box {
+    width: 80vw;   
+    margin: 0px auto;  
+    overflow: hidden;  
+    border-top: 20px solid aqua;
+}
+.box ul {
+    list-style: none;  
+    width: 5000px;    
+    position: relative;   
+}
+.box ul li {
+    float: left;    
+    margin-right: 10px; 
+}
+.list img{
+    width: 250px;
+    height:325px;
+}
+/* 当鼠标悬浮在图片上时 */
+.list img:hover{
+    cursor: pointer;  
+    scale: 1.3;  
+}
+
+/**/
+#dialog{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+    display: none;
+    top:0;
+}
+#box{
+    width: 80vw;
+    box-shadow:  2px 2px 3px gray;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+}
+#header{
+    height: 50px;
+    background-color: rgb(238, 87, 87);
+    line-height: 50px;
+    text-indent: 20px;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+#header span{
+    float: right;
+    padding-right: 20px;
+    cursor: pointer;
+}
+#content{
+    padding: 22px;
+    background-image: linear-gradient(30deg, rgb(255, 163, 163),rgb(154, 154, 255));
+    display: flex;
+}
+#content img{
+    width:100%;
+    height:50vh;
+}
+#content div{
+    margin-right: 20px;
+    width: 70%;
+}
+#content div h1{
+    margin-top: 5px;
+}
+#content div p{
+    margin-top: 5px;
+}
+#content .dialog_img{
+    width: 26%;
+}
+#content .storyline{
+    margin-top: 20px;
+}
+#btn{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    z-index: 2;
+    color: orangered;
+    cursor: pointer;
+    background-color: rgb(158, 158, 158);
+    border: none;
+    border-radius: 10px;
+}
+#btn:hover{
+    background-color: rgb(8, 247, 247);
+}
+
+
+main{
+    display: flex;
+    width: 88vw;
+    margin: 1vw 8vw;
+}
+main .type_box{
+    background: aqua;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    margin-right: 7%;
+    align-self: self-start;
+}
+main .type_box .row{
+    margin-bottom: 20px;
+}
+main .type_box .row h2{
+    border-bottom: 2px dotted aliceblue;
+    margin-bottom: 7px;
+}
+main .type_box .row button{
+    width: 100%;
+    padding: 8px;
+    color: aqua;
+    background: white;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+main .type_box .row button:hover{
+    color: white;
+    background:aquamarine;
+}
+
+main .content_box{
+    width: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+main .content_box .cloumn{
+    width: 19%;
+    margin-right: 2%;
+    background: aqua;
+    color: white;
+    padding: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+main .content_box .cloumn p{
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;
+    display: block ruby;
+    -webkit-box-orient: vertical;
+}
+main .content_box .cloumn p:nth-last-child(1){
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+main .content_box .cloumn p img{
+    width: 100%;
+    height: 35vh;
+}
+main .content_box .cloumn:hover{
+    background: aquamarine;
+    color:white;
+}
+
+
+
+@media (max-width:700px) {
+    #content{
+        display: block;
+    }
+    #content .dialog_img,#content div{
+        width:auto;
+    }
+    main{
+        display: block;
+    }
+    main .type_box{
+        width: auto;
+    }
+    main .content_box{
+        display: block;
+        width: auto;
+        margin-top: 30px;
+    }
+    main .content_box .cloumn{
+        width: 89%;
+    }
+    main .content_box .cloumn p{
+        text-align: center;
+    }
+    main .content_box .cloumn p img{
+        height: 63vh;
+    }
+
+}
