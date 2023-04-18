@@ -5,7 +5,7 @@
  var _dialog=document.getElementById("dialog");
 
 function openDetail(){
-    var id=event.explicitOriginalTarget.id;
+    var id=event.target.id;
     var url="./db/json/movies-coming-soon.json"
     var request=new XMLHttpRequest();
     request.open("get",url);
